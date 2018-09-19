@@ -3,3 +3,4 @@
 invlogit = function(x){exp(x)/(exp(x)+1)}
 temps = Temperature-mean(Temperature)
 xnew = invlogit(temps)
+plot(temps, xnew)
