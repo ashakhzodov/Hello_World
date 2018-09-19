@@ -1,4 +1,5 @@
 #This is a random function to create a new data. 
 
-xdata = rnorm(100)
-hist(xdata)
+invlogit = function(x){exp(x)/(exp(x)+1)}
+temps = Temperature-mean(Temperature)
+xnew = invlogit(temps)
